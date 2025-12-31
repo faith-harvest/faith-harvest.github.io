@@ -629,3 +629,17 @@ footer .uk-width-2-5\@m > div > img {
         opacity: 0.1;
     }
 }
+
+/* Flag Emoji Support */
+.flag-emoji {
+    font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", "Android Emoji", "EmojiSymbols", sans-serif;
+    font-size: 1.5em;
+    line-height: 1;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Ensure table cells align properly with flags */
+.uk-table td .flag-emoji {
+    margin-right: 8px;
+}
