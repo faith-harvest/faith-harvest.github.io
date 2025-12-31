@@ -563,7 +563,8 @@ img {
 /* Footer Brand Column with Logo Background */
 footer .uk-width-2-5\@m {
     position: relative;
-    overflow: hidden;
+    overflow: visible;
+    min-height: 400px;
 }
 
 footer .uk-width-2-5\@m::before {
@@ -572,8 +573,8 @@ footer .uk-width-2-5\@m::before {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 320px;
-    height: 320px;
+    width: 280px;
+    height: 280px;
     background-image: url('../img/fmci-logo.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -601,9 +602,13 @@ footer .uk-width-2-5\@m > div > img {
         letter-spacing: 1.5px;
     }
     
+    footer .uk-width-2-5\@m {
+        min-height: 350px;
+    }
+    
     footer .uk-width-2-5\@m::before {
-        width: 260px;
-        height: 260px;
+        width: 240px;
+        height: 240px;
         opacity: 0.12;
     }
 }
@@ -614,9 +619,13 @@ footer .uk-width-2-5\@m > div > img {
         letter-spacing: 1px;
     }
     
+    footer .uk-width-2-5\@m {
+        min-height: auto;
+    }
+    
     footer .uk-width-2-5\@m::before {
-        width: 200px;
-        height: 200px;
+        width: 180px;
+        height: 180px;
         opacity: 0.1;
     }
 }
