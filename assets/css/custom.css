@@ -544,3 +544,54 @@ img {
         display: none;
     }
 }
+
+/* Footer Brand Column with Logo Background */
+footer .uk-width-2-5\@m {
+    position: relative;
+    overflow: hidden;
+}
+
+footer .uk-width-2-5\@m::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 280px;
+    height: 280px;
+    background-image: url('../img/fmci-logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.08;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Ensure content stays above the background */
+footer .uk-width-2-5\@m > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Optional: Hide the small logo in footer since we have the background */
+footer .uk-width-2-5\@m > div > img {
+    display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 959px) {
+    footer .uk-width-2-5\@m::before {
+        width: 220px;
+        height: 220px;
+        opacity: 0.06;
+    }
+}
+
+@media (max-width: 639px) {
+    footer .uk-width-2-5\@m::before {
+        width: 180px;
+        height: 180px;
+        opacity: 0.05;
+    }
+}
