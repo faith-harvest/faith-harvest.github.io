@@ -22,17 +22,18 @@ body {
     color: #333;
 }
 
-/* Navbar Styling */
+/* Navbar Styling - LIGHT THEME */
 .uk-navbar-container:not(.uk-navbar-transparent) {
-    background: var(--fmci-primary);
+    background: var(--fmci-white);
     border-radius: 0;
+    border-bottom: 2px solid rgba(226, 197, 120, 0.2);
 }
 
 .uk-navbar-nav > li > a {
-    color: var(--fmci-white);
+    color: var(--fmci-primary);
     text-transform: uppercase;
     font-size: 0.875rem;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 0.5px;
     transition: all 0.3s ease;
 }
@@ -40,17 +41,22 @@ body {
 .uk-navbar-nav > li:hover > a,
 .uk-navbar-nav > li > a:focus,
 .uk-navbar-nav > li.uk-active > a {
-    color: var(--fmci-secondary);
+    color: var(--fmci-accent);
 }
 
 .uk-navbar-sticky {
-    box-shadow: 0 2px 20px rgba(69, 22, 20, 0.15);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
 }
 
 .uk-logo {
-    color: var(--fmci-secondary);
+    color: var(--fmci-primary);
     font-size: 1.5rem;
     letter-spacing: 1px;
+}
+
+/* Mobile menu toggle icon - dark color */
+.uk-navbar-right .uk-hidden\@m a {
+    color: var(--fmci-primary);
 }
 
 /* Buttons */
@@ -79,7 +85,7 @@ body {
 
 .uk-button-default {
     background-color: transparent;
-    color: var(--fmci-white);
+    color: var(--fmci-primary);
     border: 2px solid var(--fmci-secondary);
     text-transform: uppercase;
     font-weight: 600;
@@ -231,28 +237,45 @@ a:hover {
     padding-left: 10px;
 }
 
-/* Footer */
+/* Footer - LIGHT THEME */
 footer {
-    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
-    color: #ccc;
+    background: linear-gradient(135deg, #f8f8f8 0%, #ffffff 100%);
+    color: #555;
+    border-top: 3px solid var(--fmci-secondary);
 }
 
 footer h3,
 footer h4 {
-    color: var(--fmci-secondary);
+    color: var(--fmci-primary);
 }
 
 footer a {
-    color: #ccc;
+    color: #666;
     transition: color 0.3s ease;
 }
 
 footer a:hover {
-    color: var(--fmci-secondary);
+    color: var(--fmci-accent);
 }
 
 footer .uk-list > li {
     padding: 5px 0;
+}
+
+/* Footer icon colors for light theme */
+footer .uk-icon {
+    color: var(--fmci-accent);
+}
+
+/* Footer hr styling */
+footer hr {
+    border-top-color: rgba(69, 22, 20, 0.15);
+}
+
+/* Footer text styling */
+footer .uk-text-small,
+footer p {
+    color: #666;
 }
 
 /* Social Icons */
