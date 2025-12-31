@@ -311,6 +311,17 @@ footer p {
     transform: translateY(-3px);
 }
 
+/* Footer Social Icons - Visible on light background */
+footer .uk-icon-button {
+    background: var(--fmci-accent);
+    color: var(--fmci-white);
+}
+
+footer .uk-icon-button:hover {
+    background: var(--fmci-secondary);
+    color: var(--fmci-primary);
+}
+
 /* Tables */
 .uk-table {
     border-radius: 8px;
