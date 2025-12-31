@@ -630,16 +630,49 @@ footer .uk-width-2-5\@m > div > img {
     }
 }
 
-/* Flag Emoji Support */
-.flag-emoji {
-    font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", "Android Emoji", "EmojiSymbols", sans-serif;
-    font-size: 1.5em;
-    line-height: 1;
+/* Country Flag Badges */
+.country-flag {
     display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--fmci-accent) 0%, var(--fmci-secondary) 100%);
+    color: white;
+    font-weight: 700;
+    font-size: 0.7rem;
+    line-height: 32px;
+    text-align: center;
     vertical-align: middle;
+    margin-right: 8px;
+    letter-spacing: 0.5px;
 }
 
-/* Ensure table cells align properly with flags */
-.uk-table td .flag-emoji {
-    margin-right: 8px;
+/* Individual country colors */
+.country-flag.ke {
+    background: linear-gradient(135deg, #006600 0%, #009900 100%);
+}
+
+.country-flag.gb {
+    background: linear-gradient(135deg, #012169 0%, #C8102E 100%);
+}
+
+.country-flag.us {
+    background: linear-gradient(135deg, #B22234 0%, #3C3B6E 100%);
+}
+
+.country-flag.au {
+    background: linear-gradient(135deg, #012169 0%, #FFCD00 100%);
+}
+
+.country-flag.in {
+    background: linear-gradient(135deg, #FF9933 0%, #138808 100%);
+}
+
+.country-flag.za {
+    background: linear-gradient(135deg, #007A4D 0%, #FFB612 100%);
+}
+
+/* Ensure table alignment */
+.uk-table td {
+    vertical-align: middle;
 }
